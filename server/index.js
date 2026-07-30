@@ -1,4 +1,9 @@
 import express from "express";
+import { connectDB } from "./config/connectdb.js";
+
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -20,5 +25,6 @@ app.delete("/api/products/:id", (req, res) => {
 });
 
 app.listen(port, () => {
+  connectDB();
   console.log(`App is running on port ${port}`);
 });
