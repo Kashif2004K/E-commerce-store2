@@ -7,3 +7,17 @@ export const getProducts = async () => {
   }
   return response.json();
 };
+
+export const createProduct = async (product) => {
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(product),
+  });
+  if (!response.ok) {
+    throw new Error(response.error);
+  }
+  return response.json();
+};
