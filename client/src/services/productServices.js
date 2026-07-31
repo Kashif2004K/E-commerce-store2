@@ -21,3 +21,31 @@ export const createProduct = async (product) => {
   }
   return response.json();
 };
+
+export const updateProduct = async (product, id) => {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: "Patch",
+    header: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(product),
+  });
+  if (!response.ok) {
+    throw new Error(response.error);
+  }
+  return response.json();
+};
+
+export const deleteProduct = async (product, id) => {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: "Delete",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(product),
+  });
+  if (!response.ok) {
+    throw new Error(response.error);
+  }
+  return response.json();
+};
