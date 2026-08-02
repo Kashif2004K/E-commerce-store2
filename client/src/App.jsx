@@ -1,12 +1,15 @@
-import ProductForm from "./components/ProductForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import AdminProducts from "./pages/AdminProducts";
 
 const App = () => {
   return (
-    <div>
-      <ProductForm />
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<AdminProducts />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
