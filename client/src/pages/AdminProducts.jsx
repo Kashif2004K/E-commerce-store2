@@ -42,10 +42,19 @@ const AdminProducts = () => {
 
       setProducts((prev) =>
         prev.map((product) =>
-          product._id === updateProduct._id ? updateProduct : product,
+          product._id === updatedProduct._id ? updatedProduct : product,
         ),
       );
       setEditingProduct(null);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const handleDeleteProduct = async (id) => {
+    try {
+      await deleteProduct(id);
+      setProducts((prev) => prev.filter((product) => product._id !== id));
     } catch (error) {
       console.log(error.message);
     }
@@ -74,12 +83,14 @@ const AdminProducts = () => {
             <img
               src={product.image}
               alt="product-image"
-              style={{ width: "140px", height: "100px", objectFit: "cover" }}
+              style={{ width: "100px", height: "200px", objectFit: "cover" }}
             />
             <h3>{product.name}</h3>
             <p>Price: Rs. {product.price}</p>
             <button onClick={() => setEditingProduct(product)}>Edit</button>
-            <button>Delete</button>
+            <button onClick={() => handleDeleteProduct(product._id)}>
+              Delete
+            </button>
           </div>
         ))}
       </div>
