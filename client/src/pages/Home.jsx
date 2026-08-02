@@ -1,11 +1,8 @@
-import React from "react";
+import "./Home.css";
+import heroImg from "../Assets/Hero.png";
 
 const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
+  return <div className="hero"></div>;
 };
 
 export default Home;
