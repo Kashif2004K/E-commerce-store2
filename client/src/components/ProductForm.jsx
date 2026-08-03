@@ -4,6 +4,9 @@ const emptyForm = {
   name: "",
   price: "",
   image: "",
+  description: "",
+  stock: "",
+  category: "",
 };
 
 const ProductForm = ({ editingProduct, onSubmit, onCancel }) => {
@@ -15,6 +18,9 @@ const ProductForm = ({ editingProduct, onSubmit, onCancel }) => {
         name: editingProduct.name,
         price: editingProduct.price,
         image: editingProduct.image,
+        stock: editingProduct.stock,
+        category: editingProduct.stock,
+        description: editingProduct.description,
       });
     } else {
       setForm(emptyForm);
@@ -32,7 +38,10 @@ const ProductForm = ({ editingProduct, onSubmit, onCancel }) => {
     await onSubmit({
       name: form.name,
       price: Number(form.price),
+      stock: Number(form.stock),
       image: form.image,
+      category: form.category,
+      description: form.description,
     });
     setForm(emptyForm);
   };
@@ -46,10 +55,29 @@ const ProductForm = ({ editingProduct, onSubmit, onCancel }) => {
         onChange={handleChange}
       />
       <input
+        name="category"
+        placeholder="Product category"
+        value={form.category}
+        onChange={handleChange}
+      />
+      <input
+        name="description"
+        placeholder="Product description"
+        value={form.description}
+        onChange={handleChange}
+      />
+      <input
         name="price"
         type="number"
         placeholder="Product price"
         value={form.price}
+        onChange={handleChange}
+      />
+      <input
+        name="stock"
+        placeholder="Product stock"
+        type="number"
+        value={form.stock}
         onChange={handleChange}
       />
       <input
