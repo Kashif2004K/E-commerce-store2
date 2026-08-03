@@ -1,11 +1,25 @@
 .product-section {
+  display: flex;
   background-image: url(../Assets/background.png);
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+.product-content {
   margin-top: 100px;
-  margin-left: 100px;
+  width: 400px;
+  margin-left: 40px;
+}
+
+.product-h1 {
+  color: white;
 }

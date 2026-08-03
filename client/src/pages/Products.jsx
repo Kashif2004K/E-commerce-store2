@@ -22,7 +22,9 @@ const Products = () => {
   }, []);
   return (
     <div className="product-section">
-      <h1>Products</h1>
+      <div className="product-content">
+        <h1 className="product-h1">All Figures</h1>
+      </div>
       <div className="products">
         {products.map((product) => (
           <ProductCard key={product._id} product={product} />

@@ -3,10 +3,12 @@ import "./ProductCard.css";
 const ProductCard = ({ product }) => {
   return (
     <div className="card">
-      <img className="product-img" src={product.image} alt="product image" />
+      <div className="card-img">
+        <img className="product-img" src={product.image} alt="product image" />
+      </div>
       <div className="card-content">
-        <h2>{product.name}</h2>
-        <p>{product.price}</p>
+        <h2 className="p-name">{product.name}</h2>
+        <p>Rs. {product.price}</p>
       </div>
     </div>
   );
