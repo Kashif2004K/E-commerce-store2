@@ -7,8 +7,14 @@ const ProductCard = ({ product }) => {
         <img className="product-img" src={product.image} alt="product image" />
       </div>
       <div className="card-content">
-        <h2 className="p-name">{product.name}</h2>
-        <p>Rs. {product.price}</p>
+        <div>
+          <h2 className="p-name">{product.name}</h2>
+          <h3 className="p-category">{product.category}</h3>
+          <p>Rs. {product.price}</p>
+        </div>
+        <div>
+          <h4 className="p-stock">In Stock: {product.stock}</h4>
+        </div>
       </div>
     </div>
   );
