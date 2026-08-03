@@ -11,12 +11,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 200px;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .product-content {
   margin-top: 140px;
-  width: 400px;
+  width: 600px;
   margin-left: 40px;
 }
 
