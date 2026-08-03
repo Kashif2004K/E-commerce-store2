@@ -1,8 +1,33 @@
-.navbar {
+.navbar-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.navbar {
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  font-family: "Sora", sans-serif;
+  margin-right: 60px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+.logo {
+  font-family: "Sora", sans-serif;
+  color: white;
+  margin-right: 40px;
+  font-size: 2rem;
+}
+
+.logo span {
+  margin-left: 4px;
+  color: red;
+  font-size: 1.8rem;
 }

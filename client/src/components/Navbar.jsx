@@ -3,11 +3,22 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/products">Producst</Link>
-      <Link to="/admin">Admin</Link>
-    </nav>
+    <section className="navbar-container">
+      <nav className="navbar">
+        <h3 className="logo">
+          FIGURE<span>K</span>
+        </h3>
+        <Link className="links" to="/">
+          Home
+        </Link>
+        <Link className="links" to="/products">
+          Products
+        </Link>
+        <Link className="links" to="/admin">
+          Admin
+        </Link>
+      </nav>
+    </section>
   );
 };
 

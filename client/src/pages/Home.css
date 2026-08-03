@@ -9,6 +9,60 @@
   height: 100vh;
   background-image: url("../Assets/Hero.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
+}
+
+.left-hero {
+  position: absolute;
+  top: 24%;
+  margin-left: 30px;
+}
+
+.paf {
+  font-family: "Sora", sans-serif;
+  color: white;
+  font-size: 5rem;
+  width: 600px;
+}
+
+.paf-span {
+  background: linear-gradient(to top, #c24308, #ebebeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.le-hero {
+  width: 140px;
+  font-family: "Sora", sans-serif;
+  color: #c25c08;
+  font-size: 1rem;
+  padding: 5px;
+  border: 2px solid #c25c08;
+}
+
+.cc-hero {
+  font-family: "Sora", sans-serif;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.hero-para {
+  font-family: "Sora", sans-serif;
+  color: rgb(148, 148, 148);
+  font-size: 1.1rem;
+  width: 350px;
+  margin-top: 40px;
+}
+
+.btn1 {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  margin-top: 18px;
+  background-color: #d33c00;
+  border: none;
+  color: white;
+  border-radius: 8px;
 }
