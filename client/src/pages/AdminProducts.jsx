@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductForm from "../components/ProductForm";
+import "./AdminProducts.css";
 
 import {
   getProducts,
@@ -69,15 +70,20 @@ const AdminProducts = () => {
   };
 
   return (
-    <div>
-      <h1>Admin Products</h1>
-      <ProductForm
-        editingProduct={editingProduct}
-        onSubmit={handleSubmit}
-        onCancel={() => setEditingProduct(null)}
-      />
+    <div className="admin-section">
+      <div className="admin-form">
+        <h1>Admin Products</h1>
+        <ProductForm
+          editingProduct={editingProduct}
+          onSubmit={handleSubmit}
+          onCancel={() => setEditingProduct(null)}
+        />
+      </div>
       <h2>Products</h2>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div
+        className="admin-products"
+        style={{ display: "flex", flexWrap: "wrap" }}
+      >
         {products.map((product) => (
           <div key={product._id} style={{ margin: "20px" }}>
             <img

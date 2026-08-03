@@ -2,7 +2,7 @@
   display: flex;
   background-image: url(../Assets/background.png);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -15,11 +15,32 @@
 }
 
 .product-content {
-  margin-top: 100px;
+  margin-top: 140px;
   width: 400px;
   margin-left: 40px;
 }
 
 .product-h1 {
   color: white;
+  font-size: 2.2rem;
+}
+
+.product-p {
+  color: white;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.product-list {
+  color: rgb(223, 100, 0);
+  list-style: none;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(122, 122, 122);
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.product-list li {
+  margin-top: 20px;
 }

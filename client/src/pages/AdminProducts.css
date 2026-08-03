@@ -1,0 +1,22 @@
+.admin-section {
+  background-image: url(../Assets/background.png);
+  background-size: cover;
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.admin-products {
+  margin-top: 50px;
+  color: white;
+}
+
+.admin-form {
+  padding-top: 100px;
+}
+
+.admin-form h1 {
+  margin-bottom: 20px;
+}
