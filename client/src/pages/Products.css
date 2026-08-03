@@ -1,0 +1,11 @@
+.product-section {
+  background-image: url(../Assets/background.png);
+  height: 100vh;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-left: 100px;
+}

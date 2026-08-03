@@ -1,6 +1,7 @@
 import { getProducts } from "../services/productServices";
 import ProductCard from "../components/ProductCard";
 import { useEffect, useState } from "react";
+import "./Products.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ const Products = () => {
     fetchPoducts();
   }, []);
   return (
-    <div>
+    <div className="product-section">
       <h1>Products</h1>
       <div className="products">
         {products.map((product) => (
