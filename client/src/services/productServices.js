@@ -8,6 +8,14 @@ export const getProducts = async () => {
   return response.json();
 };
 
+export const getSingleProduct = async (id) => {
+  const response = await fetch(`${API_URL}/${id}`);
+  if (!response.ok) {
+    throw new Error(response.error);
+  }
+  return response.json();
+};
+
 export const createProduct = async (product) => {
   const response = await fetch(API_URL, {
     method: "POST",

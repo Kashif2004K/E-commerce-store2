@@ -3,6 +3,7 @@ import Products from "./pages/Products";
 import AdminProducts from "./pages/AdminProducts";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import ProductDetails from "./pages/ProductDetails";
 
 const App = () => {
   return (
@@ -32,6 +33,15 @@ const App = () => {
             <>
               <Navbar />
               <AdminProducts />
+            </>
+          }
+        />
+        <Route
+          path="/details"
+          element={
+            <>
+              <Navbar />
+              <ProductDetails />
             </>
           }
         />
