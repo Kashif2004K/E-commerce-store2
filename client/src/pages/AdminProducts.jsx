@@ -85,14 +85,19 @@ const AdminProducts = () => {
         style={{ display: "flex", flexWrap: "wrap" }}
       >
         {products.map((product) => (
-          <div key={product._id} style={{ margin: "20px" }}>
+          <div key={product._id} className="admin-card">
             <img
               src={product.image}
               alt="product-image"
-              style={{ width: "100px", height: "200px", objectFit: "cover" }}
+              style={{ width: "140px", height: "200px", objectFit: "cover" }}
             />
             <h3>{product.name}</h3>
+            <h4 style={{ color: "orange" }}>{product.category}</h4>
+            <p style={{ width: "130px", color: "cyan" }}>
+              {product.description}
+            </p>
             <p>Price: Rs. {product.price}</p>
+            <p>In stock: {product.stock}</p>
             <button onClick={() => setEditingProduct(product)}>Edit</button>
             <button onClick={() => handleDeleteProduct(product._id)}>
               Delete

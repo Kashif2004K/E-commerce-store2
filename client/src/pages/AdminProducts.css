@@ -1,15 +1,19 @@
 .admin-section {
   background-image: url(../Assets/background.png);
   background-size: cover;
-  height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100vh;
   color: white;
 }
 
+.admin-card {
+  margin-right: 20px;
+}
+
 .admin-products {
-  margin-top: 50px;
+  margin: 50px;
   color: white;
 }
 
