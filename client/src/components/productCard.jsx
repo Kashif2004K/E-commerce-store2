@@ -4,8 +4,10 @@ const ProductCard = ({ product }) => {
   return (
     <div className="card">
       <img className="product-img" src={product.image} alt="product image" />
-      <h2>{product.name}</h2>
-      <p>{product.price}</p>
+      <div className="card-content">
+        <h2>{product.name}</h2>
+        <p>{product.price}</p>
+      </div>
     </div>
   );
 };
