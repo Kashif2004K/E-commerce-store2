@@ -20,6 +20,7 @@ const Products = () => {
     };
     fetchPoducts();
   }, []);
+
   return (
     <div className="product-section">
       <div className="product-content">

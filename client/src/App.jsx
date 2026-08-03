@@ -27,6 +27,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="/products/:id" element={<ProductDetails />} />
         <Route
           path="/admin"
           element={
