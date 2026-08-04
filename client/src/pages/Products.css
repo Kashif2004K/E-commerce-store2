@@ -2,21 +2,24 @@
   display: flex;
   background-image: url(../Assets/background.png);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
   margin-top: 200px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .product-content {
   margin-top: 140px;
-  width: 600px;
+  width: 300px;
+  flex-shrink: 0;
   margin-left: 40px;
 }
 
